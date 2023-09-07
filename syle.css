@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+  
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*heder section*/
+header{
+    width: 100%;
+   
+    background-color:chocolate;
+    padding: 20px;
+
+    position: absolute;
+top: 0;
+
+   
+}
+
+header a{
+    text-decoration: none;
+    margin-right: 100px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+   
+
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+}
+
+/* banner section*/
+.banner-container{
+   margin-top:50px ;
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(6,72,105,0.849),rgb(3,96,133)), url(./3408105.jpg);
+    filter: brightness(1.5);
+    display: flex;
+    background-attachment:fixed ;
+    background-position: center;
+    align-items: center;
+}
+.banner-container .container{
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    width: 100%;
+}
+.left-section{
+    width:400px;
+    align-self: flex-start;
+}.left-section .stick{
+  
+    width: 100px;
+}
+.left-section h1{
+   margin: 0;
+   color:white;
+   font-size: 30px;
+
+}
+.left-section p{
+    margin: 0;
+    color:rgb(247, 226, 226);
+    letter-spacing: 1px;
+    margin-top: 20px;
+    line-height: 28px;
+    font-size: 12px;
+   
+ 
+ }
+ .left-section button{
+    color: rgb(5, 56, 118);
+    background-color: white;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+ }
+/* left section end */
+
+/* right section */
+
+.right-section{
+    width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px 0;
+    box-shadow: 0 5px 6px rgb(29, 1, 1);
+
+}
+.right-section h4{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primerky-color);
+    
+    width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.input-group{
+    width :300px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.input-group input{
+    border: none;
+    padding: 7px;
+    margin-top: 5px;
+    outline:blue;
+    border-bottom: 1px solid blue; 
+
+}
+.input-group label{
+    color: var(--primerky-color);
+    font-size: 15px;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+
+}
+.input-group input:focus~label,
+.input-group input:valid~label{
+    color: blue;
+    top: -14px;
+    font-size: 12px;
+    
+}
+.input-group input:focus,
+.input-group input:valid{
+    border-color: blue;
+  
+}
+.buttun-section{
+    text-align: center;
+}
+.submit-butten{
+    background-color:var(--primerky-color);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    width: 250px;
+    cursor: pointer;
+}
+.submit-butten :hover{
+    box-shadow:  0 4px silver;
+}
+/* section two  start*/
+.section2{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+    background-image:linear-gradient(rgba(6,72,105,0.849),rgb(3,96,133)), url(./teck.jpg);
+
+}
+.card-container h4{
+    color: cornflowerblue;
+    font-size: larger;
+    font-weight: bold;
+}
+.card-container{
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 10px 30px 26px rgb(59, 57, 57);
+    overflow: hidden;
+    text-align: center;
+}
+
+.image-container{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+.image-container img:hover{
+    transform: scale(1.1) rotate(-5deg);
+
+}
+/* sectiontwo end */
+footer{
+    text-align: center;
+    color:white;
+    padding: 15px; 
+     background-color: cadetblue;
+}
+footer span{
+    color: blueviolet;
+    font-weight: bold;
+  
+}
